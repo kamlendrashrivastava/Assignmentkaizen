@@ -1,0 +1,282 @@
+                                           
+                                                                        Assignment7
+                                                                 
+          
+     Q.1) What is the difference between Procedural and Object oriented programming?
+   Ans-               pop                                                                                       oop
+       
+      1) In Procedural programming, a program is divided into small programs                         1)In OOP a program is divided into small parts that are referred to as objects
+         that are referred to as function
+
+      2) It is less secure than OOPs.
+                                                                                                     2)Data hiding is possible in object-oriented programming due to abstraction. So, it is      
+      3) It follows a top-down approach.                                                               more secure than procedural programming.
+                                                                                                     3)It follows a bottom-up approach
+      4)it is structure/procedure-oriented.                                                          4)It is object-oriented.
+      5)There are no access modifiers in procedural programming.                                     5)The access modifiers in OOP are named as private, public, and protected
+      6)Procedural programming does not have the concept of inheritance                              6)There is a feature of inheritance in object-oriented programming.
+      7)There is no code reusability present in procedural programming.                              7)It offers code reusability by using the feature of inheritance.
+      8)Overloading is not possible in procedural programming.                                       8)In OOP there is a concept of function overloading and operator overloading.
+      9)In procedural programming, there are no virtual classes.                                     9)In OOP there is an appearance of virtual classes in inheritance.
+      10)It is not appropriate for complex problems.                                                 10)It is appropriate for complex problems.
+      11)There is not any proper way for data hiding.                                                11)There is a possibility of data hiding.
+      12)Examples of Procedural programming include C, Fortran, Pascal, and VB.                      12)The examples of object-oriented programming are .NET, C#, Python,Java and C++.
+
+    Q.2) What were the problems with Procedural programming?
+    Ans- A major problem of using Procedural Programming as a method of programming is the inability to reuse code throughout the program. 
+         Having to rewrite the same type of code many times throughout a program can add to the development cost and time of a project.
+         Another disadvantage is the difficulty in error checking.
+
+    Q.3) Define class
+    Ans- 1) A class is not a real world entity.A class is the template or blueprint from which objects are made.
+         2) Class is a logical entity with no physical existence in memory.
+         ex- Fruit is a class with no physical existence
+         3) class is the collection of object.
+        Syntax--   acess modifier class classname
+                   {
+                    --methods,constructor,fields,block,nested class
+                    }                 
+
+    Q.4) Define Object
+    Ans- Object is an instance of class which has state and behaviour.Object is a physical entity with physical existence in memory.
+         An object consists of : 
+         State: It is represented by attributes of an object. It also reflects the properties of an object.
+         Behavior: It is represented by methods of an object. It also reflects the response of an object with other objects.
+         Identity: It gives a unique name to an object and enables one object to interact with other objects.
+         example of an object-Dog, 
+         identity-Name of the dog
+         State/Attributes-Breed,Age,Colour.
+         Behaviour- Bark,Sleep,Eat.
+     
+    Q.5) What is the difference between the class and object and give a real world example of each.
+    Ans-   Object                                                                                                        Class
+        1) Object is an instance of a class.
+	                                                                                                1) Class is a blueprint or template from which objects are created.
+        2) Object is a real world entity such as pen, laptop, mobile, bed, keyboard, 
+           mouse, chair etc.
+	                                                                                                2) Class is a group of similar objects.
+
+        3) Object is a physical entity.
+	                                                                                                3) Class is a logical entity.
+        4) Object is created through new keyword mainly e.g.
+          Student s1=new Student();	                                                                4) Class is declared using class keyword e.g.
+                                                                                                           class Student{}
+
+        5) Object is created many times as per requirement.	                                        5) Class is declared once.
+
+        6) Object allocates memory when it is created.
+	                                                                                                6) Class doesn't allocated memory when it is created.
+        7) There are many ways to create object in java such as new keyword, 
+           newInstance() method, clone() method, factory method and deserialization                     7) There is only one way to define class in java using class keyword.
+                                                               
+      example--  Class: Human  Object: Man, Woman
+
+                 Class: Fruit  Object: Apple, Banana, Mango, Guava
+                
+                 Class: Mobile phone Object: iPhone, Samsung, Moto
+
+                 Class: Food  Object: Pizza, Burger, samosa
+
+
+     Q.6) Out of class and object which has physical existence and which is logical entity.
+
+     Ans- Object- Physical entity
+          Class-  Logical entity
+         
+                          
+     Q.7) What do you mean by “state”, “behavior” and “identity” with respect of Object?
+ 
+     Ans- An object consists of : 
+         State: It is represented by attributes of an object. It also reflects the properties of an object.
+         Behavior: It is represented by methods of an object. It also reflects the response of an object with other objects.
+         Identity: It gives a unique name to an object and enables one object to interact with other objects.
+         example of an object-Dog, 
+         identity-Name of the dog
+         State/Attributes-Breed,Age,Colour.
+         Behaviour- Bark,Sleep,Eat.
+       
+     Q.8) As per PPT(slide 8) define your Employee class and add
+          fields(instance variables), constructor and getter/setter methods to it.
+
+     Ans-  class Employee
+           {
+           private String name;     //instance variables
+           private double salary;
+           public Employee( String n, double salary)      // constructor
+           {
+           name=n;
+           salary=s;
+           }
+           public String getname()               //method
+           {
+           return name;
+           }
+           public double setsalary()
+           {
+           return salary;
+           }
+            }
+   
+      Q.9) What are “class members” in terms of class?
+
+      Ans- The methods,constructor,fields,blocks,nested class and variables defined within a class are called members of the class.
+
+      Q.10) What is a constructor?
+      
+      Ans-  1) constructor is  a block(similar to method) having same name as that of class name.
+            2) constructor does not have any return type, not even void.
+            3) the only modifiers applicable for constructor are public,private,protected, default
+            4) It executed automatically when we create object.
+
+      Q.11) What is the return type of constructor?
+     
+      Ans-  constructor does not have any return type, not even void.
+    
+      Q.12) What is a parameterized constructor?
+    
+      Ans-  A constructor which has a specific number of parameters is called a parameterized constructor.
+
+      Q.13) Create an object of the employee class created in question 8 using the “new” operator.
+
+      Ans-  Employee e= new Employee();
+   
+      Q.14) What is a default no argument constructor?
+
+      Ans-  A constructor that has no parameter is known as the default constructor. 
+            If we don't define a constructor in a class, then the compiler creates a default constructor(with no arguments) for the class.
+      
+      Q.15) Is it true that a class gets no-argument constructor by default only when there is no other parameterized constructor defined?
+
+      Ans-  No Because dafault constructor is created only when there is no other constructor such that user defined and paramaterized.
+    
+      Q.16) What is the meaning of “null”, what happens when a reference variable points to “null”, i.e Employee employee = null.
+
+      Ans-  null can be assigned to any variable of a reference type (that is, a non-primitive type) to indicate that the variable does not refer to any object or array. 
+            That means that null cannot be used in place of a reference to a Java object like an instance of java.
+    
+      Q.17) What is a method, what is the return type and parameters of a method? Take examples from the Employee class.
+
+      Ans-  A set of codes which perform a particular task.
+            advantage of method- 1) code reusability 2) code optimization.
+            return type- A return type may be a primitive type like int, float, double, a reference type or void type.
+            parameters of a method- Parameters act as variables inside the method.
+            Parameters are specified after the method name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
+            ex- public String getname(string name, double salary)
+
+      Q.18) What do we mean by “void” return type. List all the methods that return “void” in Employee class.
+   
+      Ans-  A void return type simply means nothing is returned.
+            public void describe() {
+	    System.out.println("Employee [name=" + name + ", type=" + type + ", salary=" + salary + "]");
+
+      Q.19) Check all the “getter” methods in your Employee class and check that all these have a “return” statement, list all the methods in
+            employee class that return some value.
+
+      Ans-   public String getname()               //method
+           {
+           return name;
+           }
+   
+      Q.20) Add a method calculateSalary(salary, bonus) in your employee class and call it after creating the object of employee class.
+
+      Ans-  class Employee
+           {
+           private String name;     //instance variables
+           private double salary;
+           private int bonus;
+           public Employee( String n, double salary, int bonus)      // constructor
+           {
+           this.name=name;
+           this.salary=salary;
+           this.bonus=bonus;
+           }
+           public String getname()               //method
+           {
+           return name;
+           }
+           public double setsalary()
+           {
+           return salary;
+           }
+           public int calculateSalary(salary, bonus) 
+            {
+              return salary,bonus;
+              }
+            public Static void main(String[] args)
+            {
+            Employee e1= new Employee(kama,2000,2800);
+            s.o.p("employee1:"+e1.name+""+e1.salary+""+e1.bonus);
+            }}
+            
+      Q.21) What is “this” keyword used for?
+ 
+      Ans-  The this keyword refers to the current object in a method or constructor.
+            this can also be used to:
+           - Invoke current class constructor
+           - Invoke current class method
+           - Return the current class object
+           - Pass an argument in the method call
+           - Pass an argument in the constructor call
+
+      Q.22) What are different access modifiers that can be applied to fields and methods of a class?
+ 
+      Ans-  Four types of access modifiers are- public,private,default,protected.
+  
+      Q.23) Describe all the access modifiers.
+
+      Ans-  There are four types of Java access modifiers:
+           1) Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
+ 
+           2) Default: The access level of a default modifier is only within the package. It cannot be accessed from outside the package. 
+                       If you do not specify any access level, it will be the default.
+
+           3)Protected: The access level of a protected modifier is within the package and outside the package through child class. 
+                        If you do not make the child class, it cannot be accessed from outside the package.
+
+           4) Public: The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
+
+     Q.24) What is the purpose of private methods?
+ 
+     Ans-  Private methods are useful for breaking tasks up into smaller parts, or for preventing duplication of code which is needed often by other methods in a class 
+           but should not be called outside of that class.
+
+     Q.25) Which access modifier would you use to protect your fields/data?
+
+     Ans-  protected access modifier protect your fields/data.
+
+     Q.26) How do you identify classes and methods for a particular requirement? Take an example of a Banking System and identify all
+           the classes that would be needed to build the system.
+
+     Ans-  Class- Banking system   Object- Account number, Account name,Account type,Balance
+           Method- Withdrawl,Deposit.
+
+
+
+
+
+
+
+           
+
+
+
+
+
+
+                                           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
