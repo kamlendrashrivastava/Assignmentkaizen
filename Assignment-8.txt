@@ -1,0 +1,117 @@
+                                                          Assignment-8
+
+   Q.1  What is inheritance? Explain with examples.
+   
+   Ans- Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object.
+        Inheritance represents the IS-A relationship which is also known as a parent-child relationship.
+        Syntax-  class Subclass-name extends Superclass-name  
+                 {  
+                    //methods and fields  
+                  } 
+      
+       The extends keyword indicates that you are making a new class that derives from an existing class. The meaning of "extends" is to increase the functionality. 
+       In the terminology of Java, a class which is inherited is called a parent or superclass, and the new class is called child or subclass.
+      
+       example-          class Employee{  
+                              float salary=400;  
+                                       }  
+                        class Programmer extends Employee{  
+                              int bonus=100;  
+                        public static void main(String args[]){  
+                        Programmer p=new Programmer();  
+                       System.out.println("Programmer salary is:"+p.salary);  
+                       System.out.println("Bonus of Programmer is:"+p.bonus);  
+                       }  
+                         }  
+        Programmer is the subclass and Employee is the superclass. The relationship between the two classes is Programmer IS-A Employee. 
+        It means that Programmer is a type of Employee.Programmer object can access the field of own class as well as of Employee class i.e. code reusability.
+  
+  Q.2  Why do we need to use inheritance?
+  
+  Ans- 1) For Method Overriding (so runtime polymorphism can be achieved).
+       2) For Code Reusability.
+
+  Q.3  What is the keyword used to achieve Inheritance in Java?
+
+  Ans- To inherit the parent class, a child class must include a keyword called "extends."
+       The keyword "extends" enables the compiler to understand that the child class derives the functionalities and members of its parent class.
+
+ Q.4   What is the use of the “super” keyword?
+
+ Ans-   The super keyword in Java is a reference variable which is used to refer immediate parent class object. 
+       Usage of Java super Keyword -
+       1) super can be used to refer immediate parent class instance variable.
+       2) super can be used to invoke immediate parent class method.
+       3) super() can be used to invoke immediate parent class constructor.
+
+ Q.5  How can a sub-class call a constructor of the super class.
+
+ Ans- Use of super() to access superclass constructor
+      As we know, when an object of a class is created, its default constructor is automatically called. 
+      To explicitly call the superclass constructor from the subclass constructor, we use super() .
+
+ Q.6  What is method overriding?
+
+ Ans- If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.
+
+      In other words, If a subclass provides the specific implementation of the method that has been declared by one of its
+      parent class, it is known as method overriding.
+     
+     Usage of Java Method Overriding-
+     Method overriding is used to provide the specific implementation of a method which is already provided by its superclass.
+     Method overriding is used for runtime polymorphism
+
+     Rules for Java Method Overriding-
+     The method must have the same name as in the parent class
+     The method must have the same parameter as in the parent class.
+     There must be an IS-A relationship (inheritance).
+
+ Q.7 Is multiple inheritance supported in Java?
+
+ Ans-No multiple inheritance not supported in java.Consider a case where class B extends class A and Class C and 
+     both class A and C have the same method display(). 
+     Now java compiler cannot decide, which display method it should inherit. 
+     To prevent such situation, multiple inheritances is not allowed in java.
+
+ NOTE: Java does not support multiple inheritance of classes but it supports multiple inheritance for interfaces. 
+       Means, a class cannot inherit more than one class but it can inherit and implement multiple interfaces.
+
+ Q.8 What is “Dynamic Binding”?
+
+ Ans-When type of the object is determined at run-time, it is known as dynamic binding.
+     We also call Dynamic binding as Late Binding because binding takes place during the actual execution of the program.
+
+ Q.9 What is “Overloading resolution”, how it is done?
+
+ Ans- The process of compiler trying to resolve the method call from given overloaded method definitions is called overload resolution. 
+     If the compiler can not find the exact match it looks for the closest match by using upcasts only (downcasts are never done).
+     The compiler will consider not a downcast, but an unboxing conversion for overload resolution.
+
+ Q.10 Which keyword is used to prevent inheritance?
+
+ Ans- To prevent inheritance use the keyword "final" when creating the class.
+
+ Q.11 Can a final method be overridden?
+ 
+ Ans- No the Methods that are declared as final cannot be Overridden or hidden.
+ 
+ Q.12 What are abstract classes, why are they used?
+
+ Ans- A class which is declared with the abstract keyword is known as abstract class.
+      Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+      It can have abstract and non-abstract methods. It needs to be extended and its method implemented. It cannot be instantiated.
+      Java Abstract class is used to provide common method implementation to all the subclasses or to provide default implementation
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
